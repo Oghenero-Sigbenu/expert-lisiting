@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaTimes, FaCalculator } from "react-icons/fa";
 export default function CreateBudgetModal() {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   const features = [
     {
