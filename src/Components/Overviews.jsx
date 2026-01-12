@@ -6,7 +6,7 @@ const Overviews = () => {
   return (
     <div className="flex-col gap-4 md:flex md:gap-4 lg:gap-6 lg:h-[325px] justify-between">
       {/* Listings Overview */}
-      <div className="bg-white pb-4 rounded-[16px] h-[152px] shadow-sm   border border-[#e4e4e4]">
+      <div className="bg-white pb-4 rounded-[16px] h-[152px] shadow-sm mb-2  border border-[#e4e4e4]">
         <div className="flex items-center  rounded-t-[16px] justify-between p-4 mb-4 bg-[#F9FAFB] w-full">
           <div className="flex items-center gap-2 ">
             <FaChartLine className="text-emerald-600" />

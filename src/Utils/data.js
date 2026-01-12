@@ -7,15 +7,15 @@ import {
 } from "react-icons/fa";
 import { PiToolboxBold } from "react-icons/pi";
 export const salesData = [
-  { month: "Jan", value1: 35, value2: 25 },
-  { month: "Feb", value1: 45, value2: 20 },
-  { month: "Mar", value1: 30, value2: 35 },
-  { month: "Apr", value1: 40, value2: 30 },
-  { month: "May", value1: 50, value2: 25 },
-  { month: "Jun", value1: 48, value2: 38 },
-  { month: "Jul", value1: 42, value2: 32 },
-  { month: "Aug", value1: 38, value2: 28 },
-  { month: "Sep", value1: 45, value2: 35 },
+  { month: "Jan", value1: 35, value2: 25, value3: 15 },
+  { month: "Feb", value1: 45, value2: 20, value3: 10 },
+  { month: "Mar", value1: 30, value2: 35, value3: 20 },
+  { month: "Apr", value1: 40, value2: 30, value3: 25 },
+  { month: "May", value1: 50, value2: 25, value3: 30 },
+  { month: "Jun", value1: 48, value2: 38, value3: 28 },
+  { month: "Jul", value1: 42, value2: 32, value3: 22 },
+  { month: "Aug", value1: 38, value2: 28, value3: 18 },
+  { month: "Sep", value1: 45, value2: 35, value3: 25 },
 ];
 
 export const navItems = [
@@ -46,4 +46,18 @@ export const properties = [
     image:
       "https://images.unsplash.com/photo-1460317442991-0ec209397118?w=800&h=600&fit=crop",
   },
+];
+export const monthNames = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
 ];

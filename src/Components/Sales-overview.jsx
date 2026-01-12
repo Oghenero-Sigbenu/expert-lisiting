@@ -60,12 +60,16 @@ const SalesOverview = () => {
                     style={{ height: "240px" }}
                   >
                     <div
-                      className="flex-1 bg-gradient-to-t from-emerald-500 to-emerald-400 rounded-t"
+                      className="flex-1 w-[10px] bg-gradient-to-t from-emerald-500 to-emerald-400"
                       style={{ height: `${data.value1}%` }}
                     />
                     <div
-                      className="flex-1 bg-gradient-to-t from-red-500 to-red-400 rounded-t"
+                      className="flex-1 bg-gradient-to-t from-red-500 to-red-400 "
                       style={{ height: `${data.value2}%` }}
+                    />
+                    <div
+                      className="flex-1 bg-gradient-to-t from-blue to-blue "
+                      style={{ height: `${data.value3}%` }}
                     />
                   </div>
                   <span className="text-xs text-gray-500 mt-1">
@@ -79,49 +83,30 @@ const SalesOverview = () => {
 
         {/* Metrics */}
         <div className="flex w-full flex-wrap gap-3 md:w-[49%] mt-2 ">
-          <InflowCard title="t" amount="0" date="h" description="kk" />
-          <div className="border w-[48%] border-blue-200 rounded-lg p-2 bg-blue-50 h-[73px]">
-            <p className="text-[19px] font-bold text-blue-600">
-              ₦120,000,000.00
-            </p>
-            <div className="flex items-center gap-2">
-              <span className="text-[10px] text-[#3d3d3d] font-[500] ">
-                MRR
-              </span>
-              <span className="flex items-center gap-1 text-xs text-green-600">
-                <FaArrowUp className=" bg-[#12b76a] text-white rounded-[50%] p-1 w-[14px] h-[14px]" />{" "}
-                2.5%
-              </span>
-            </div>
-          </div>
-          <div className="border w-[48%] border-blue-200 rounded-lg p-2 bg-blue-50 h-[73px]">
-            <p className="text-[19px] font-bold text-blue-600">
-              ₦120,000,000.00
-            </p>
-            <div className="flex items-center gap-2">
-              <span className="text-[10px] text-[#3d3d3d] font-[500] ">
-                Total Inflow
-              </span>
-              <span className="flex items-center gap-1 text-xs text-green-600">
-                <FaArrowUp className=" bg-[#12b76a] text-white rounded-[50%] p-1 w-[14px] h-[14px]" />{" "}
-                2.5%
-              </span>
-            </div>
-          </div>
-          <div className="border w-[48%] border-blue-200 rounded-lg p-2 bg-blue-50 h-[73px]">
-            <p className="text-[19px] font-bold text-blue-600">
-              ₦120,000,000.00
-            </p>
-            <div className="flex items-center gap-2">
-              <span className="text-[10px] text-[#3d3d3d] font-[500] ">
-                Total Inflow
-              </span>
-              <span className="flex items-center gap-1 text-xs text-green-600">
-                <FaArrowUp className=" bg-[#12b76a] text-white rounded-[50%] p-1 w-[14px] h-[14px]" />{" "}
-                2.5%
-              </span>
-            </div>
-          </div>
+          <InflowCard
+            title="Total Inflow"
+            amount="₦120,000,000.00"
+            value="2.5"
+            color="text-blue"
+          />
+          <InflowCard
+            title="MRR"
+            amount="₦50,000,000.00"
+            value="2.5"
+            color="text-[#12B76A]"
+          />
+          <InflowCard
+            title="Commission Revenue"
+            amount="₦200,000,000.00"
+            value="0.5"
+            color="text-[#14B8A6]"
+          />
+          <InflowCard
+            title="GMV"
+            amount="₦100,000,000.00"
+            value="0.5"
+            color="text-[#F04438]"
+          />
         </div>
       </div>
     </div>
