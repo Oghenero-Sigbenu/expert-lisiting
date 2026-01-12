@@ -9,7 +9,7 @@ import {
 
 const Header = ({ openCalendar, openModal }) => {
   return (
-    <header className="bg-[#105B48] text-white px-6 py-4">
+    <header className="bg-[#105B48] text-white px-4 py-4">
       <div className="flex items-center max-w-[1284px] mx-auto justify-between">
         <div className="flex items-center gap-2">
           <FaThLarge className="text-2xl" />

@@ -2,7 +2,7 @@ import { navItems } from "../Utils/data";
 
 const Navbar = () => {
   return (
-    <nav className="bg-white border-b px-6 ">
+    <nav className="bg-white border-b px-4 ">
       <div className="flex justify-between  overflow-x-auto max-w-[1284px] mx-auto items-center h-[67px] flex ">
         {navItems.map((item, index) => (
           <button
